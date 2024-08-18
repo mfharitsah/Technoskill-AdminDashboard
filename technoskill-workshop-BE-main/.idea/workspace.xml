@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f44f95c1-86c7-4327-9eef-da3b38fbbbdc" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/employee.controller.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/manager.controller.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/employee.route.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/manager.route.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/connect.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/model.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../technoskill-workshop-FE-main/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../technoskill-workshop-FE-main/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../technoskill-workshop-FE-main/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../technoskill-workshop-FE-main/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../technoskill-workshop-FE-main/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../technoskill-workshop-FE-main/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../technoskill-workshop-FE-main/src/components/AddEmployeePage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../technoskill-workshop-FE-main/src/components/AddEmployeePage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../technoskill-workshop-FE-main/src/components/HomePage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../technoskill-workshop-FE-main/src/components/HomePage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../technoskill-workshop-FE-main/src/components/LoginPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../technoskill-workshop-FE-main/src/components/LoginPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../technoskill-workshop-FE-main/src/components/MyInfoPage.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../technoskill-workshop-FE-main/src/components/elements/DashboardElement.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../technoskill-workshop-FE-main/src/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../technoskill-workshop-FE-main/src/main.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../technoskill-workshop-FE-main/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/../technoskill-workshop-FE-main/tailwind.config.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4
+}]]></component>
+  <component name="ProjectId" id="2k8Uy0vdp5lR2QyZQCVgiDJdset" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "harris/fe",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f44f95c1-86c7-4327-9eef-da3b38fbbbdc" name="Changes" comment="" />
+      <created>1722664950146</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1722664950146</updated>
+      <workItem from="1722664952730" duration="11000" />
+    </task>
+    <servers />
+  </component>
+</project>

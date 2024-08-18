@@ -1,27 +1,18 @@
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { ScrollRestoration, Outlet } from "react-router-dom";
 
-import HomePage from "./components/HomePage";
-import AddEmployeePage from "./components/AddEmployeePage";
-import MyInfoPage from "./components/MyInfoPage";
-import LoginPage from "./components/LoginPage";
+import SideBar from "./components/elements/SideBar";
+import { UserProvider } from "./context/UserContext";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Navigate to={"/login"} />} />
+    <UserProvider>
+      <div className="flex bg-dark-1">
+        <ScrollRestoration />
+          <SideBar />
+        <Outlet />
+      </div>
+    </UserProvider>
 
-        <Route path="/home" element={<HomePage />} />
-
-        <Route path="/add-employee" element={<AddEmployeePage />} />
-
-        <Route path="/my-info" element={<MyInfoPage />} />
-
-        <Route path="/login" element={<LoginPage />} />
-
-        {/* Input rute lain di sini */}
-      </Routes>
-    </BrowserRouter>
   );
 }
 

@@ -1,23 +1,26 @@
-const express = require("express");
-const bodyParser = require("body-parser");
-const dotenv = require("dotenv");
+const express = require("express")
+const dotenv = require("dotenv")
+const bodyParser = require("body-parser")
 
-const managerRoute = require("./routes/manager.route");
-const employeeRoute = require("./routes/employee.route");
+const userRoute = require("./route/user_route")
+const employeeRoute = require("./route/employee_route")
 
-const cors = require("cors");
-dotenv.config();
+const cors = require("cors")
+dotenv.config()
 
-const port = 8000; // Isi nomor port di sini;
-const app = express();
+const app = express()
+const port = process.env.PORT 
 
-app.use(cors());
-app.use(bodyParser.json());
-app.use(express.urlencoded({ extended: false }));
+app.use(cors())
+app.use(bodyParser.json())
+app.use(express.urlencoded({extended: false}))
 
-app.use("/manager", managerRoute);
-app.use("/employee", employeeRoute);
+// Endpoint User
+app.use('/user', userRoute)
+
+// Endpoint Employee
+app.use("/employee", employeeRoute)
 
 app.listen(port, () => {
-  console.log(`Running on port ${port}!`);
-});
+    console.log(`Server running at port ${port}`)
+})
