@@ -40,7 +40,7 @@ const Login = () => {
         e.preventDefault();
         // Logika untuk memeriksa password
         try {
-            const response = await axios.post(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/passwordLogin`, {
+            const response = await axios.post(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/user/passwordLogin`, {
                 username,
                 password
             })      
