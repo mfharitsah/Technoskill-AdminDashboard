@@ -16,7 +16,7 @@ const Register = () => {
         e.preventDefault();
 
         try {
-            const response = await axios.post("http://localhost:8463/user/register", {
+            const response = await axios.post(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/user/register`, {
                 name,
                 email,
                 password
@@ -34,7 +34,7 @@ const Register = () => {
         e.preventDefault();
         // Logika untuk memeriksa email atau username
         try {
-            const response = await axios.post("http://localhost:8463/user/emailLogin", {
+            const response = await axios.post(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/user/emailLogin`, {
                 username
             })      
             

@@ -11,9 +11,6 @@ const AccountInfo = () => {
     const storedUser = localStorage.getItem('user');
     const userId = JSON.parse(storedUser).id_user;
 
-    // base UrL
-    const baseUrl = "http://localhost:8463";
-
     const [editState, setEditState] = useState(false)
 
     const [name, setName] = useState("-");
@@ -28,7 +25,7 @@ const AccountInfo = () => {
 
     const handleGetAccountInfo = async () => {
         try {
-            const response = await axios.get(`${baseUrl}/user/getUserById/${userId}`)
+            const response = await axios.get(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/user/getUserById/${userId}`)
 
             if (response.status) {
                 const loggedUser = response.data;
@@ -58,7 +55,7 @@ const AccountInfo = () => {
         const fullAddress = country + "," + stateCity + "," + address + "," + zipCode;
         console.log(fullAddress);
         try {
-            const response = await axios.post(`${baseUrl}/user/editProfile/${userId}`, {
+            const response = await axios.post(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/user/editProfile/${userId}`, {
                 name, 
                 email, 
                 username, 
@@ -69,17 +66,6 @@ const AccountInfo = () => {
 
             if (response.status) {
                 handleGetAccountInfo()
-                // const editedProfile = response.data.body;
-
-                // setName(editedProfile.name)
-                // setUsername(editedProfile.username)
-                // setEmail(editedProfile.email)
-                // setPhoneNumber(editedProfile.phoneNumber)
-                // setPosition(editedProfile.position)
-                // setCountry(editedProfile.country)
-                // setStateCity(editedProfile.stateCity)
-                // setAddress(editedProfile.address)
-                // setZipCode(editedProfile.zipCode)
 
                 setEditState(false)
             }

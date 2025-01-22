@@ -11,8 +11,6 @@ export default function AddEmployeePage() {
   const storedUser = localStorage.getItem('user');
   const userId = JSON.parse(storedUser).id_user;
 
-    // base UrL
-    const baseUrl = "http://localhost:8463";
 
   const navigate = useNavigate();
 
@@ -96,7 +94,7 @@ export default function AddEmployeePage() {
         phone_number, 
         status);
 
-      const response = await axios.post(`${baseUrl}/employee/addEmployee`, {
+      const response = await axios.post(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/employee/addEmployee`, {
         id_user_employee, 
         name, 
         division, 

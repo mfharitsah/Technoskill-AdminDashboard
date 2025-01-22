@@ -15,9 +15,6 @@ const EmployeeDetail = () => {
     const storedUser = localStorage.getItem('user');
     const userId = JSON.parse(storedUser).id_user;
 
-    // base UrL
-    const baseUrl = "http://localhost:8463";
-
     const navigate = useNavigate()
     const location = useLocation()
     const [name, setName] = useState("");
@@ -36,7 +33,7 @@ const EmployeeDetail = () => {
 
     const handleEmployeeDetail = async () => {
         try {
-            const response = await axios.get(`${baseUrl}/employee/getEmployee/${location.state.id}`)
+            const response = await axios.get(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/employee/getEmployee/${location.state.id}`)
 
             if (response.status) {
                 const resData = response.data.body;
@@ -60,7 +57,7 @@ const EmployeeDetail = () => {
         const id_user_employee = userId;
         const id_employee = location.state.id;
         try {
-            const response = await axios.post(`${baseUrl}/employee/editEmployeeDetail`, {
+            const response = await axios.post(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/employee/editEmployeeDetail`, {
                 id_user_employee, 
                 id_employee, 
                 name, 

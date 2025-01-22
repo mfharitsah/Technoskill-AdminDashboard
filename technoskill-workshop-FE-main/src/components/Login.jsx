@@ -20,7 +20,7 @@ const Login = () => {
         e.preventDefault();
         // Logika untuk memeriksa email atau username
         try {
-            const response = await axios.post("http://localhost:8463/user/emailLogin", {
+            const response = await axios.post(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/user/emailLogin`, {
                 username
             })      
             
@@ -40,7 +40,7 @@ const Login = () => {
         e.preventDefault();
         // Logika untuk memeriksa password
         try {
-            const response = await axios.post("http://localhost:8463/user/passwordLogin", {
+            const response = await axios.post(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/passwordLogin`, {
                 username,
                 password
             })      

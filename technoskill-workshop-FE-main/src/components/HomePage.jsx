@@ -16,9 +16,6 @@ export default function HomePage() {
 
   const navigate = useNavigate();
 
-  // base UrL
-  const baseUrl = "http://localhost:8463";
-
   const [employees, setEmployees] = useState([])
   const [filteredEmployees, setFilteredEmployees] = useState([])
   const [totalEmployee, setTotalEmployee] = useState("")
@@ -30,7 +27,7 @@ export default function HomePage() {
 
   const handleGetAllEmployee = async () => {
     try {
-      const response = await axios.get(`${baseUrl}/employee/getAllEmployeeByUserId/${userId}`)
+      const response = await axios.get(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/employee/getAllEmployeeByUserId/${userId}`)
 
       if (response.status) {
         setTotalEmployee(response.data.length);
@@ -45,7 +42,7 @@ export default function HomePage() {
 
   const handleCountDivision = async () => {
     try {
-      const response = await axios.get(`${baseUrl}/employee/countDivision/${userId}`)
+      const response = await axios.get(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/employee/countDivision/${userId}`)
 
       if (response.status) {
         setTotalDivision(response.data.jumlah_divisi)
