@@ -9,15 +9,12 @@ const DeleteConfirmation = ({ onClose, userId, employeeId }) => {
 
     const navigate = useNavigate()
 
-    // base UrL
-    const baseUrl = "http://localhost:8463";
-
     const handleDeleteEmployee = async () => {
         const id_user_employee = userId
         const id_employee = employeeId
         console.log(id_user_employee, id_employee);
         try {
-            const response = await axios.delete(`${baseUrl}/employee/deleteEmployee`, {
+            const response = await axios.delete(`${import.meta.env.VITE_REACT_APP_BACKEND_BASEURL}/employee/deleteEmployee`, {
             data: { id_user_employee, id_employee }
         });
 
